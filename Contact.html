@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h2>Emma Bawiec</h2>
+      <input type="checkbox" id="menu" />
+      <label for="menu"></label>
+      <nav>
+        <ul class="menu-container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero_container">
+      <h1>Contact Me!</h1>
+      <img
+        class="scrapbackground"
+        src="scrapbackground.png"
+        alt="pen, tape, binder clip, paper clip, sticker, and soda pop tab"
+      />
+    </div>
+
+    <!-- Contact Section -->
+    <div class="handwithphone-container">
+      <img src="handandphone.png" alt="hand with phone" />
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" method="POST" action="send_email.php">
+          <!-- Form fields -->
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Jane Doe"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="janedoe@email.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Hello!"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <button type="submit" id="submit-button">Send Message</button>
+        </form>
+        <p id="form-status"></p>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
