@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="EB white.png" alt="Emma Bawiec Logo" />
+        </a>
+        <ul class="menu-container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About Me.html">About Me</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- GALLERY SECTION -->
+    <section class="process-section">
+      <h2 class="section-title">Project Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-index="0">
+          <img src="impala.png" alt="Impala Skate" class="gallery-bg" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Impala Skate</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="1">
+          <img
+            src="Billboards Art Fest-01.png"
+            alt="Ethnic Arts Fest Billboard part I."
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Arts Fest Billboard I</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="2">
+          <img src="ggappt.png" alt="GalleryGo App Mockup" class="gallery-bg" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">GalleryGo App Design</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="3">
+          <img
+            src="uecollateral.jpg"
+            alt="Ultimate Ears Collateral Design"
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Ultimate Ears Collateral Design</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="4">
+          <img
+            src="pobaw.png"
+            alt="Perks of Being a Wallflower Redesign"
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Perks of Being a Wallflower Redesign</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="5">
+          <img
+            src="mac.png"
+            alt="Mac Miller Album Redesign"
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Mac Miller "Divine Feminine" Album</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="6">
+          <img
+            src="junglebook mockup.png"
+            alt="The Jungle Book Redesign"
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">The Jungle Book Redesign</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="7">
+          <img src="mag.png" alt="Adobe Magazine Design" class="gallery-bg" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Adobe Magazine Design</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="8">
+          <img src="bpota.png" alt="Block Party Banner" class="gallery-bg" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Block Party Banner</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="9">
+          <img src="tllm.png" alt="Talk Less Listen More" class="gallery-bg" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Talk Less Listen More</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="10">
+          <img
+            src="Arch 2.png"
+            alt="Chicago Architecture Booklet"
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Chicago Architecture Booklet</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="11">
+          <img
+            src="bwbb.png"
+            alt="Ethnic Arts Fest Billboard part II."
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Arts Fest Billboard III</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <button class="lightbox-prev">&#10094;</button>
+      <button class="lightbox-next">&#10095;</button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightbox-img" />
+        <div class="lightbox-caption">
+          <h3 id="lightbox-title"></h3>
+          <p id="lightbox-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT IMAGE GRID -->
+    <section class="projects">
+      <h2 class="projects-title">Projects</h2>
+      <div class="image-grid">
+        <a href="ue.html" class="panel panel-1">
+          <div class="panel-bg"></div>
+          <div class="panel-info">
+            <h3 class="panel-title">Ultimate Ears Rebrand</h3>
+            <p class="panel-description">
+              A rebrand for Ultimate Ears. The speaker made by music lovers, for
+              music lovers.
+            </p>
+          </div>
+          <span class="number">1</span>
+        </a>
+
+        <a href="George.html" class="panel panel-2">
+          <div class="panel-bg"></div>
+          <div class="panel-info">
+            <h3 class="panel-title">Georges Song Shop Homepage</h3>
+            <p class="panel-description">
+              Rebranding a classic record store, staying relevant digitally
+              while preserving physical media.
+            </p>
+          </div>
+          <span class="number">2</span>
+        </a>
+
+        <a href="bw.html" class="panel panel-3">
+          <div class="panel-bg"></div>
+          <div class="panel-info">
+            <h3 class="panel-title">Bottle Works Branding</h3>
+            <p class="panel-description">
+              Design and marketing calling attention to the Ethnic Arts Center
+              of Johnstown, PA.
+            </p>
+          </div>
+          <span class="number">3</span>
+        </a>
+
+        <a href="gg.html" class="panel panel-4">
+          <div class="panel-bg"></div>
+          <div class="panel-info">
+            <h3 class="panel-title">GalleryGo App Design</h3>
+            <p class="panel-description">
+              App design inspired by making art accessible and engaging for all
+              ages.
+            </p>
+          </div>
+          <span class="number">4</span>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="About Me.html">About Me</a>
+        <a href="Gallery.html">Gallery</a>
+      </div>
+      <div class="footer-logo">
+        <img src="EB white.png" alt="Emma Bawiec Logo" />
+      </div>
+      <div class="footer-contact">
+        <h4>e.bawiec@setonhill.edu</h4>
+        <h4>814 - 421 - 3537</h4>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Emma Bawiec. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxTitle = document.getElementById("lightbox-title");
+      const lightboxText = document.getElementById("lightbox-text");
+      const closeBtn = document.querySelector(".lightbox-close");
+      const prevBtn = document.querySelector(".lightbox-prev");
+      const nextBtn = document.querySelector(".lightbox-next");
+      const galleryItems = document.querySelectorAll(".gallery-item");
+
+      let currentIndex = 0;
+
+      galleryItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+          currentIndex = index;
+          openLightbox();
+        });
+      });
+
+      function openLightbox() {
+        const currentItem = galleryItems[currentIndex];
+        const img = currentItem.querySelector(".gallery-bg");
+        const title = currentItem.querySelector(".gallery-title");
+        const text = currentItem.querySelector(".gallery-text");
+
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxTitle.textContent = title ? title.textContent : "";
+        lightboxText.textContent = text ? text.textContent : "";
+
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      function showNext() {
+        currentIndex = (currentIndex + 1) % galleryItems.length;
+        openLightbox();
+      }
+
+      function showPrev() {
+        currentIndex =
+          (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        openLightbox();
+      }
+
+      closeBtn.addEventListener("click", closeLightbox);
+      nextBtn.addEventListener("click", showNext);
+      prevBtn.addEventListener("click", showPrev);
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (!lightbox.classList.contains("active")) return;
+        if (e.key === "Escape") closeLightbox();
+        if (e.key === "ArrowRight") showNext();
+        if (e.key === "ArrowLeft") showPrev();
+      });
+    </script>
+  </body>
+</html>

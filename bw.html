@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bottle Works Branding</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="EB white.png" alt="Emma Bawiec Logo" />
+        </a>
+        <ul class="menu-container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About Me.html">About Me</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- PROJECT HERO SECTION -->
+    <section class="project-hero">
+      <div class="project-info">
+        <h1 class="project-title">Bottle Works Branding</h1>
+        <h2 class="project-description">
+          Insert a brief description about the project. Process, intent, etc.
+        </h2>
+      </div>
+      <div class="project-image">
+        <img src="bwbb.png" alt="Bottle Works Billboard" />
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process-section">
+      <h2 class="section-title">Process</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-index="0">
+          <img
+            src="BWbillsketch01.png"
+            alt="Bottle Works Ethnic Fest Billboard Sketches Part I."
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Sketching</h3>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="1">
+          <img
+            src="BWbillsketch02.png"
+            alt="Bottle Works Ethnic Fest Billboard Sketches"
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">
+              Bottle Works Ethnic Fest Billboard Sketches Part II.
+            </h3>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="2">
+          <img
+            src="BWbillsketchpick.png"
+            alt="Bottle Works Ethnic Fest Billboard Sketches"
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Billboard Approved Designs</h3>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="3">
+          <img
+            src="Billboards Art Fest-01 copy.jpg"
+            alt="Prototype"
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Billboard Design 01</h3>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="4">
+          <img
+            src="Billboards Art Fest-02 copy.jpg"
+            alt="Testing"
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Billboard Design 02</h3>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="5">
+          <img src="bwbb.png" alt="Final Product" class="gallery-bg" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Billboard Design 03</h3>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="6">
+          <img src="FAFflyer2.jpg" alt="Ethnic Arts Flyer" class="gallery-bg" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Ethnic Arts Flyer</h3>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="7">
+          <img
+            src="NEWSPAPER AD-02.jpg"
+            alt="Newspaper Advertisement"
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Newspaper Advertisement</h3>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="8">
+          <img
+            src="BWblocksketch.png"
+            alt="Block Party Sketches"
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Block Party Sketches part I.</h3>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="9">
+          <img
+            src="block party revamp copy.jpg"
+            alt="Block Party Logo Design."
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Block Party Final Logo</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <button class="lightbox-prev">&#10094;</button>
+      <button class="lightbox-next">&#10095;</button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightbox-img" />
+        <div class="lightbox-caption">
+          <h3 id="lightbox-title"></h3>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="About Me.html">About Me</a>
+        <a href="Gallery.html">Gallery</a>
+      </div>
+      <div class="footer-logo">
+        <img src="EB white.png" alt="Emma Bawiec Logo" />
+      </div>
+      <div class="footer-contact">
+        <h4>e.bawiec@setonhill.edu</h4>
+        <h4>814 - 421 - 3537</h4>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Emma Bawiec. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxTitle = document.getElementById("lightbox-title");
+      const closeBtn = document.querySelector(".lightbox-close");
+      const prevBtn = document.querySelector(".lightbox-prev");
+      const nextBtn = document.querySelector(".lightbox-next");
+      const galleryItems = document.querySelectorAll(".gallery-item");
+
+      let currentIndex = 0;
+
+      galleryItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+          currentIndex = index;
+          openLightbox();
+        });
+      });
+
+      function openLightbox() {
+        const currentItem = galleryItems[currentIndex];
+        const img = currentItem.querySelector(".gallery-bg");
+        const title = currentItem.querySelector(".gallery-title");
+
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxTitle.textContent = title ? title.textContent : "";
+
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      function showNext() {
+        currentIndex = (currentIndex + 1) % galleryItems.length;
+        openLightbox();
+      }
+
+      function showPrev() {
+        currentIndex =
+          (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        openLightbox();
+      }
+
+      closeBtn.addEventListener("click", closeLightbox);
+      nextBtn.addEventListener("click", showNext);
+      prevBtn.addEventListener("click", showPrev);
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (!lightbox.classList.contains("active")) return;
+        if (e.key === "Escape") closeLightbox();
+        if (e.key === "ArrowRight") showNext();
+        if (e.key === "ArrowLeft") showPrev();
+      });
+    </script>
+  </body>
+</html>

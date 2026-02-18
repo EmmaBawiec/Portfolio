@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>George's Song Shop Webpage</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="EB white.png" alt="Emma Bawiec Logo" />
+        </a>
+        <ul class="menu-container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About Me.html">About Me</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- PROJECT HERO SECTION -->
+    <section class="project-hero">
+      <div class="project-info">
+        <h1 class="project-title">George's Song Shop Webpage</h1>
+        <h2 class="project-description">
+          Insert a brief description about the project. Process, intent, etc.
+        </h2>
+      </div>
+      <div class="project-image">
+        <img src="gssm.png" alt="Ultimate Ears Image" />
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process-section">
+      <h2 class="section-title">Process</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-index="0">
+          <img src="gsssketches.png" alt="Design Sketches" class="gallery-bg" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Beginning Sketches</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="2">
+          <img src="gssm.png" alt="Webpage Mockup" class="gallery-bg" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Webpage Mockup</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="3">
+          <img src="aom.png" alt="Webpage Mockup" class="gallery-bg" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Album of the Month</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="4">
+          <img src="na.png" alt="Webpage Mockup" class="gallery-bg" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">New Arrivals</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-index="4">
+          <img
+            src="gsswebsite.png"
+            alt="George's Song Shop Homepage Design"
+            class="gallery-bg"
+          />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Full homepage design.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <button class="lightbox-prev">&#10094;</button>
+      <button class="lightbox-next">&#10095;</button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightbox-img" />
+        <div class="lightbox-caption">
+          <h3 id="lightbox-title"></h3>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="About Me.html">About Me</a>
+        <a href="Gallery.html">Gallery</a>
+      </div>
+      <div class="footer-logo">
+        <img src="EB white.png" alt="Emma Bawiec Logo" />
+      </div>
+      <div class="footer-contact">
+        <h4>e.bawiec@setonhill.edu</h4>
+        <h4>814 - 421 - 3537</h4>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Emma Bawiec. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxTitle = document.getElementById("lightbox-title");
+      const closeBtn = document.querySelector(".lightbox-close");
+      const prevBtn = document.querySelector(".lightbox-prev");
+      const nextBtn = document.querySelector(".lightbox-next");
+      const galleryItems = document.querySelectorAll(".gallery-item");
+
+      let currentIndex = 0;
+
+      galleryItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+          currentIndex = index;
+          openLightbox();
+        });
+      });
+
+      function openLightbox() {
+        const currentItem = galleryItems[currentIndex];
+        const img = currentItem.querySelector(".gallery-bg");
+        const title = currentItem.querySelector(".gallery-title");
+
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxTitle.textContent = title ? title.textContent : "";
+
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      function showNext() {
+        currentIndex = (currentIndex + 1) % galleryItems.length;
+        openLightbox();
+      }
+
+      function showPrev() {
+        currentIndex =
+          (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        openLightbox();
+      }
+
+      closeBtn.addEventListener("click", closeLightbox);
+      nextBtn.addEventListener("click", showNext);
+      prevBtn.addEventListener("click", showPrev);
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (!lightbox.classList.contains("active")) return;
+        if (e.key === "Escape") closeLightbox();
+        if (e.key === "ArrowRight") showNext();
+        if (e.key === "ArrowLeft") showPrev();
+      });
+    </script>
+  </body>
+</html>
