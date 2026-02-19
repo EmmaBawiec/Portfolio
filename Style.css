@@ -1,6 +1,7 @@
 /* ============================================================
-   RESET
+   START
    ============================================================ */
+  
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +11,13 @@
 body {
   background: #f9f6ef;
   font-family: "Montserrat", sans-serif;
-  padding-top: 380px;
+  padding-top: 100px;  /* reduced from 380px */
 }
 
 
+/* ============================================================
+   HEADER
+   ============================================================ */
 /* ============================================================
    HEADER
    ============================================================ */
@@ -30,23 +34,25 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;  /* reduced from 2rem */
+  max-width: 1600px;   /* optional: constrain width */
+  margin: 0 auto;
 }
 
 .logo img {
-  height: 300px;
+  height: 80px;        /* reduced from 300px */
 }
 
 .menu-container {
   display: flex;
   list-style: none;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 nav a {
   text-decoration: none;
   color: #f9f6ef;
-  font-size: 4rem;
+  font-size: 1.1rem;   /* reduced from 4rem */
   padding: 12px 20px;
   border-radius: 14px;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -74,10 +80,12 @@ nav a:hover {
 }
 
 .typing-container {
+  font-family: "Montserrat", sans-serif;
   font-size: 3vw;
   font-weight: 700;
   color: #193497;
 }
+
 
 .cursor {
   display: inline-block;
@@ -772,11 +780,10 @@ footer {
     gap: 1.5rem;
   }
 
-  .intro {
-    min-height: calc(100vh - 140px);
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
+ .intro {
+  padding: 10rem 75px;
+  min-height: calc(100vh - 100px);  /* match new padding-top */
+}
 
   .about-intro {
     flex-direction: column;
@@ -1285,6 +1292,7 @@ nav a:hover {
   font-weight: 700;
   color: #193497;
 }
+
 
 .cursor {
   display: inline-block;
