@@ -1,7 +1,6 @@
 /* ============================================================
-   START
+   RESET
    ============================================================ */
-  
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +10,10 @@
 body {
   background: #f9f6ef;
   font-family: "Montserrat", sans-serif;
-  padding-top: 100px;  /* reduced from 380px */
+  padding-top: 90px;
 }
 
 
-/* ============================================================
-   HEADER
-   ============================================================ */
 /* ============================================================
    HEADER
    ============================================================ */
@@ -34,27 +30,25 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;  /* reduced from 2rem */
-  max-width: 1600px;   /* optional: constrain width */
-  margin: 0 auto;
+  padding: 0.75rem 3rem;
 }
 
 .logo img {
-  height: 80px;        /* reduced from 300px */
+  height: 65px;
 }
 
 .menu-container {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 nav a {
   text-decoration: none;
   color: #f9f6ef;
-  font-size: 1.1rem;   /* reduced from 4rem */
-  padding: 12px 20px;
-  border-radius: 14px;
+  font-size: 1.1rem;
+  padding: 10px 18px;
+  border-radius: 10px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -68,8 +62,8 @@ nav a:hover {
    INTRO (home page)
    ============================================================ */
 .intro {
-  padding: 10rem 75px;
-  min-height: calc(100vh - 380px);
+  padding: 6rem 75px;
+  min-height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,16 +75,15 @@ nav a:hover {
 
 .typing-container {
   font-family: "Montserrat", sans-serif;
-  font-size: 3vw;
+  font-size: clamp(2rem, 3vw, 4rem);
   font-weight: 700;
   color: #193497;
 }
 
-
 .cursor {
   display: inline-block;
-  width: 5px;        /* adjust thickness here */
-  height: 0.85em;    /* controls the height */
+  width: 3px;
+  height: 0.85em;
   background: #193497;
   margin-left: 4px;
   vertical-align: middle;
@@ -103,10 +96,11 @@ nav a:hover {
 }
 
 .intro-text {
-  font-size: 2.2vw;
+  font-size: clamp(1rem, 1.6vw, 1.6rem);
   max-width: 60%;
   margin-top: 0.75rem;
   font-weight: 400;
+  color: #282828;
 }
 
 
@@ -114,8 +108,8 @@ nav a:hover {
    ABOUT INTRO
    ============================================================ */
 .about-intro {
-  padding: 10rem 75px;
-  min-height: calc(100vh - 380px);
+  padding: 6rem 75px;
+  min-height: calc(100vh - 90px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -129,7 +123,7 @@ nav a:hover {
 }
 
 .about-intro .intro-text {
-  font-size: 1.9vw;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   max-width: 100%;
   margin-top: 0.75rem;
   font-weight: 400;
@@ -153,11 +147,11 @@ nav a:hover {
    PROJECT GRID
    ============================================================ */
 .projects {
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 .projects-title {
-  font-size: 10rem;
+  font-size: clamp(3rem, 7vw, 7rem);
   font-weight: 700;
   color: #193497;
   text-align: center;
@@ -232,22 +226,23 @@ nav a:hover {
 }
 
 .panel-title {
-  font-size: 8rem;
+  font-size: clamp(1.1rem, 2vw, 2.2rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .panel-description {
-  font-size: 3.5rem;
+  font-size: clamp(0.85rem, 1.2vw, 1.3rem);
   font-weight: 300;
   line-height: 1.4;
 }
 
+/* Large decorative number — kept intentionally big but capped */
 .number {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  font-size: 95rem;
+  font-size: clamp(8rem, 18vw, 22rem);
   font-weight: 700;
   color: #f9f6ef;
   opacity: 0.8;
@@ -268,7 +263,7 @@ nav a:hover {
   justify-content: flex-end;
   align-items: center;
   overflow: hidden;
-  margin-top: 8rem;
+  margin-top: 5rem;
   padding: 2rem 2rem 60px;
 }
 
@@ -295,26 +290,26 @@ nav a:hover {
   position: relative;
   z-index: 3;
   text-align: center;
-  max-width: 1000px;
+  max-width: 900px;
   color: #f9f6ef;
 }
 
 .hero-content p {
-  font-size: 3.5rem;
+  font-size: clamp(1.2rem, 2vw, 2rem);
   line-height: 1.4;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-weight: 300;
 }
 
 .hero-btn {
   display: inline-block;
-  padding: 2rem 4rem;
+  padding: 1rem 2.5rem;
   background-color: #193497;
   color: #f9f6ef;
   text-decoration: none;
-  font-size: 3.5rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   font-weight: 700;
-  border-radius: 14px;
+  border-radius: 10px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -330,33 +325,33 @@ nav a:hover {
 footer {
   background-color: #193497;
   color: #f9f6ef;
-  padding: 4rem 3rem 2rem;
+  padding: 3rem 3rem 1.5rem;
 }
 
 .footer-links {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 1400px;
-  margin: 0 auto 3rem;
-  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  gap: 2rem;
 }
 
 .footer-links a {
   color: #f9f6ef;
   text-decoration: none;
-  font-size: 4rem;
+  font-size: 1.1rem;
   font-weight: 400;
   transition: font-size 0.3s ease;
 }
 
 .footer-links a:hover {
-  font-size: 4.5rem;
+  font-size: 1.25rem;
 }
 
 .footer-contact {
   color: #f9f6ef;
-  font-size: 4rem;
+  font-size: 1rem;
   font-weight: 400;
   text-align: center;
 }
@@ -368,22 +363,22 @@ footer {
 
 .footer-logo {
   text-align: center;
-  margin: 3rem auto;
+  margin: 2rem auto;
 }
 
 .footer-logo img {
-  height: 400px;
+  height: 100px;
 }
 
 .footer-bottom {
   border-top: 1px solid rgba(249, 246, 239, 0.2);
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .footer-bottom p {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 300;
   color: #f9f6ef;
 }
@@ -397,7 +392,7 @@ footer {
   gap: 4rem;
   padding: 4rem 75px;
   align-items: center;
-  min-height: calc(100vh - 380px);
+  min-height: calc(100vh - 90px);
 }
 
 .project-info {
@@ -406,7 +401,7 @@ footer {
 }
 
 .project-title {
-  font-size: 8rem;
+  font-size: clamp(2.5rem, 5vw, 5rem);
   font-weight: 700;
   color: #193497;
   margin-bottom: 2rem;
@@ -414,7 +409,7 @@ footer {
 }
 
 .project-description {
-  font-size: 3rem;
+  font-size: clamp(1rem, 1.5vw, 1.6rem);
   font-weight: 400;
   color: #f9f6ef;
   line-height: 1.6;
@@ -442,7 +437,7 @@ footer {
 }
 
 .section-title {
-  font-size: 8rem;
+  font-size: clamp(2.5rem, 5vw, 5rem);
   font-weight: 700;
   color: #193497;
   text-align: center;
@@ -509,14 +504,14 @@ footer {
 }
 
 .gallery-title {
-  font-size: 6rem;
+  font-size: clamp(1.2rem, 2.5vw, 2.5rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #f9f6ef;
 }
 
 .gallery-text {
-  font-size: 3rem;
+  font-size: clamp(0.85rem, 1.2vw, 1.3rem);
   font-weight: 300;
   line-height: 1.4;
   color: #f9f6ef;
@@ -552,7 +547,6 @@ footer {
   max-height: 90vh;
 }
 
-/* ~60% of viewport height — just under the 2/3 target */
 #lightbox-img {
   max-width: 90vw;
   max-height: 60vh;
@@ -571,17 +565,16 @@ footer {
 }
 
 #lightbox-title {
-  font-size: 6rem;
+  font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: 700;
   color: #f9f6ef;
 }
 
-/* Close button */
 .lightbox-close {
   position: absolute;
   top: 2rem;
   right: 3rem;
-  font-size: 4rem;
+  font-size: 2rem;
   color: #f9f6ef;
   cursor: pointer;
   background: none;
@@ -596,17 +589,16 @@ footer {
   color: #7899d4;
 }
 
-/* Navigation arrows */
 .lightbox-prev,
 .lightbox-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 4rem;
+  font-size: 2rem;
   color: #f9f6ef;
   background: rgba(25, 52, 151, 0.7);
   border: none;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   cursor: pointer;
   border-radius: 8px;
   z-index: 2001;
@@ -630,1217 +622,10 @@ footer {
   display: flex;
   align-items: center;
   gap: 5rem;
-  padding: 8rem 75px;
-  background: #f9f6ef;
-}
-
-/* Left column: text + button */
-.teaser-left {
-  flex: 0 0 38%;
-  max-width: 38%;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-
-/* vw-based font matching resume section scaling */
-.teaser-body {
-  font-size: 1.9vw;
-  font-weight: 400;
-  color: #282828;
-  line-height: 1.7;
-}
-
-.teaser-right {
-  flex: 1;
-}
-
-.teaser-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 14px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.teaser-img:hover img {
-  transform: scale(1.06);
-}
-
-
-/* ============================================================
-   RESUME
-   ============================================================ */
-.resume-section {
-  padding: 8rem 5%;
-  background: #f9f6ef;
-}
-
-.resume-container {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.resume-block {
-  margin-bottom: 6rem;
-}
-
-.resume-heading {
-  font-size: 8rem;
-  font-weight: 700;
-  color: #193497;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 3px solid #193497;
-}
-
-.resume-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-bottom: 0.5rem;
-  align-items: start;
-}
-
-.resume-left,
-.resume-middle {
-  display: flex;
-  flex-direction: column;
-}
-
-.resume-right {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-.company,
-.role,
-.dates {
-  font-size: 1.9vw;
-  font-weight: 400;
-  color: #282828;
-  line-height: 1.4;
-  margin: 0;
-}
-
-.location {
-  font-size: 1.5vw;
-  font-weight: 300;
-  color: #666;
-  margin: 0;
-}
-
-.description {
-  font-size: 1.9vw;
-  font-weight: 300;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 3rem;
-}
-
-.resume-bottom-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  margin-top: 4rem;
-}
-
-.contact-info {
-  font-size: 1.9vw;
-  font-weight: 300;
-  color: #666;
-  line-height: 1.8;
-  margin: 0.5rem 0;
-}
-
-
-/* ============================================================
-   RESPONSIVE — 1100px
-   ============================================================ */
-@media (max-width: 1100px) {
-  body {
-    padding-top: 140px;
-  }
-
-  .logo img {
-    height: 100px;
-  }
-
-  nav {
-    padding: 1.5rem 2rem;
-  }
-
-  nav a {
-    font-size: 1.3rem;
-  }
-
-  .menu-container {
-    gap: 1.5rem;
-  }
-
- .intro {
-  padding: 10rem 75px;
-  min-height: calc(100vh - 100px);  /* match new padding-top */
-}
-
-  .about-intro {
-    flex-direction: column;
-    min-height: calc(100vh - 140px);
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .about-intro .intro-content,
-  .about-intro .project-image {
-    max-width: 100%;
-  }
-
-  .about-intro .project-image {
-    margin-top: 3rem;
-  }
-
-  .projects {
-    margin-top: 5rem;
-  }
-
-  .projects-title {
-    font-size: 6rem;
-  }
-
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr);
-    height: 75vh;
-  }
-
-  .panel {
-    height: 50vh;
-  }
-
-  .number {
-    font-size: 8rem;
-    bottom: 10px;
-    right: 10px;
-  }
-
-  .hero-container {
-    height: 100vh;
-    margin-top: 5rem;
-    padding: 2rem 2rem 50px;
-  }
-
-  .hero-content p {
-    font-size: 2.5rem;
-  }
-
-  .hero-btn {
-    font-size: 2.5rem;
-    padding: 1.5rem 4rem;
-  }
-
-  footer {
-    padding: 3rem 2rem 1.5rem;
-  }
-
-  .footer-links {
-    gap: 1.5rem;
-  }
-
-  .footer-links a {
-    font-size: 1.3rem;
-  }
-
-  .footer-links a:hover {
-    font-size: 1.5rem;
-  }
-
-  .footer-contact {
-    font-size: 1.3rem;
-  }
-
-  .footer-logo img {
-    height: 250px;
-  }
-
-  .project-hero {
-    padding: 3rem 40px;
-    min-height: calc(100vh - 140px);
-  }
-
-  .project-title {
-    font-size: 5rem;
-  }
-
-  .project-description {
-    font-size: 2rem;
-  }
-
-  .process-section {
-    padding: 4rem 40px;
-  }
-
-  .section-title {
-    font-size: 5rem;
-  }
-
-  .gallery-grid {
-    column-count: 2;
-  }
-
-  .gallery-title {
-    font-size: 2.5rem;
-  }
-
-  .gallery-text {
-    font-size: 1.3rem;
-  }
-
-  /* Teaser */
-  .about-teaser {
-    gap: 3rem;
-    padding: 6rem 40px;
-  }
-
-  .teaser-left {
-    flex: 0 0 40%;
-    max-width: 40%;
-  }
-
-  .teaser-body {
-    font-size: 1.7vw;
-  }
-
-  .teaser-right {
-    grid-template-rows: 24vw 24vw;
-    gap: 1.2rem;
-  }
-
-  /* Resume */
-  .resume-section {
-    padding: 5rem 8%;
-  }
-
-  .resume-heading {
-    font-size: 5.5rem;
-  }
-
-  .resume-item {
-    gap: 2rem;
-  }
-
-  .company,
-  .role,
-  .dates {
-    font-size: 1.7vw;
-  }
-
-  .location {
-    font-size: 1.3vw;
-  }
-
-  .description,
-  .contact-info {
-    font-size: 1.7vw;
-  }
-}
-
-
-/* ============================================================
-   RESPONSIVE — 768px
-   ============================================================ */
-@media (max-width: 768px) {
-  body {
-    padding-top: 110px;
-  }
-
-  .logo img {
-    height: 80px;
-  }
-
-  nav {
-    padding: 1rem 1.5rem;
-  }
-
-  nav a {
-    font-size: 1.1rem;
-  }
-
-  .menu-container {
-    gap: 1rem;
-  }
-
-  .intro {
-    min-height: calc(100vh - 110px);
-    padding: 3rem 40px;
-  }
-
-  .about-intro {
-    min-height: calc(100vh - 110px);
-    padding: 3rem 40px;
-  }
-
-  .intro-text {
-    font-size: 1.2rem;
-    max-width: 90%;
-  }
-
-  .projects {
-    margin-top: 3rem;
-  }
-
-  .projects-title {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
-
-  .image-grid {
-    grid-template-columns: 1fr;
-    height: auto;
-  }
-
-  .panel {
-    height: 50vh;
-  }
-
-  .panel-title {
-    font-size: 8rem;
-  }
-
-  .panel-description {
-    font-size: 4rem;
-  }
-
-  .number {
-    font-size: 6rem;
-    bottom: 3px;
-    right: 5px;
-  }
-
-  .hero-container {
-    height: 70vh;
-    margin-top: 3rem;
-    padding: 3rem 1.5rem 40px;
-  }
-
-  .hero-content {
-    max-width: 95%;
-  }
-
-  .hero-content p {
-    font-size: 8rem;
-    margin-bottom: 1rem;
-  }
-
-  .hero-btn {
-    font-size: 4rem;
-    padding: 1.5rem 5rem;
-  }
-
-  footer {
-    padding: 1rem 2rem;
-  }
-
-  .footer-links {
-    gap: 2.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .footer-links a {
-    font-size: 1.5rem;
-  }
-
-  .footer-links a:hover {
-    font-size: 3.5rem;
-  }
-
-  .footer-contact {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .footer-logo img {
-    height: 125px;
-  }
-
-  .footer-bottom {
-    margin-top: 0.5rem;
-  }
-
-  .project-hero {
-    flex-direction: column;
-    padding: 2rem 40px;
-    gap: 2rem;
-  }
-
-  .project-info,
-  .project-image {
-    max-width: 100%;
-  }
-
-  .project-title {
-    font-size: 10rem;
-  }
-
-  .project-description {
-    font-size: 2rem;
-  }
-
-  .process-section {
-    padding: 3rem 40px;
-  }
-
-  .section-title {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-  }
-
-  .gallery-grid {
-    column-count: 1;
-  }
-
-  .gallery-title {
-    font-size: 2rem;
-  }
-
-  .gallery-text {
-    font-size: 1.1rem;
-  }
-
-  /* Lightbox */
-  #lightbox-img {
-    max-height: 55vh;
-  }
-
-  .lightbox-caption {
-    margin-top: 1.5rem;
-    padding: 0 1rem;
-  }
-
-  #lightbox-title {
-    font-size: 4rem;
-  }
-
-  .lightbox-close {
-    top: 1rem;
-    right: 1.5rem;
-    font-size: 3rem;
-  }
-
-  .lightbox-prev,
-  .lightbox-next {
-    font-size: 2.5rem;
-    padding: 0.75rem 1rem;
-  }
-
-  .lightbox-prev { left: 1rem; }
-  .lightbox-next { right: 1rem; }
-
-  /* Teaser */
-  .about-teaser {
-    flex-direction: column;
-    padding: 4rem 40px;
-    gap: 3rem;
-  }
-
-  .teaser-left {
-    flex: unset;
-    max-width: 100%;
-    gap: 2rem;
-  }
-
-  .teaser-body {
-    font-size: 2.2rem;
-  }
-
-  .teaser-right {
-    width: 100%;
-    grid-template-rows: 45vw 45vw;
-    gap: 1rem;
-  }
-
-  .teaser-img--b {
-    margin-top: -2rem;
-  }
-
-  /* Resume */
-  .resume-section {
-    padding: 3rem 40px;
-  }
-
-  .resume-block {
-    margin-bottom: 4rem;
-  }
-
-  .resume-heading {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .resume-item {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .resume-right {
-    text-align: left;
-  }
-
-  .company,
-  .role,
-  .dates {
-    font-size: 2.2rem;
-  }
-
-  .location {
-    font-size: 1.8rem;
-  }
-
-  .description,
-  .contact-info {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-  }
-
-  .resume-bottom-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  .footer-contact h4 {
-    text-align: center;
-  }
-}/* ============================================================
-   RESET
-   ============================================================ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #f9f6ef;
-  font-family: "Montserrat", sans-serif;
-  padding-top: 380px;
-}
-
-
-/* ============================================================
-   HEADER
-   ============================================================ */
-header {
-  background-color: #193497;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 3rem;
-}
-
-.logo img {
-  height: 300px;
-}
-
-.menu-container {
-  display: flex;
-  list-style: none;
-  gap: 3rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: #f9f6ef;
-  font-size: 4rem;
-  padding: 12px 20px;
-  border-radius: 14px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #7899d4;
-  transform: scale(1.05);
-}
-
-
-/* ============================================================
-   INTRO (home page)
-   ============================================================ */
-.intro {
-  padding: 10rem 75px;
-  min-height: calc(100vh - 380px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero-section {
-  margin-bottom: 2rem;
-}
-
-.typing-container {
-  font-size: 3vw;
-  font-weight: 700;
-  color: #193497;
-}
-
-
-.cursor {
-  display: inline-block;
-  width: 3px;
-  height: 1em;
-  background: #193497;
-  margin-left: 4px;
-  animation: blink 0.8s infinite;
-}
-
-@keyframes blink {
-  0%, 50%  { opacity: 1; }
-  51%, 100% { opacity: 0; }
-}
-
-.intro-text {
-  font-size: 2.2vw;
-  max-width: 60%;
-  margin-top: 0.75rem;
-  font-weight: 400;
-}
-
-
-/* ============================================================
-   ABOUT INTRO
-   ============================================================ */
-.about-intro {
-  padding: 10rem 75px;
-  min-height: calc(100vh - 380px);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 4rem;
-}
-
-.about-intro .intro-content {
-  flex: 1;
-  max-width: 50%;
-}
-
-.about-intro .intro-text {
-  font-size: 1.9vw;
-  max-width: 100%;
-  margin-top: 0.75rem;
-  font-weight: 400;
-}
-
-.about-intro .project-image {
-  flex: 1;
-  max-width: 45%;
-  align-self: flex-start;
-}
-
-.about-intro .project-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 14px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-}
-
-
-/* ============================================================
-   PROJECT GRID
-   ============================================================ */
-.projects {
-  margin-top: 8rem;
-}
-
-.projects-title {
-  font-size: 10rem;
-  font-weight: 700;
-  color: #193497;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  height: 85vh;
-  width: 100%;
-}
-
-
-/* ============================================================
-   PANELS
-   ============================================================ */
-.panel {
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  display: block;
-  text-decoration: none;
-}
-
-.panel-bg {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: transform 0.4s ease;
-}
-
-.panel-1 .panel-bg { background-image: url("uem.png"); }
-.panel-2 .panel-bg { background-image: url("gssm.png"); }
-.panel-3 .panel-bg { background-image: url("bwbb.png"); }
-.panel-4 .panel-bg { background-image: url("ggappt.png"); }
-
-.panel:hover .panel-bg {
-  transform: scale(1.5);
-}
-
-.panel::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0);
-  transition: background 0.3s ease;
-  z-index: 1;
-}
-
-.panel:hover::after {
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.panel-info {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  color: #f9f6ef;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  z-index: 2;
-  max-width: 80%;
-}
-
-.panel:hover .panel-info {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.panel-title {
-  font-size: 8rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.panel-description {
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
-.number {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  font-size: 95rem;
-  font-weight: 700;
-  color: #f9f6ef;
-  opacity: 0.8;
-  z-index: 2;
-  line-height: 1;
-}
-
-
-/* ============================================================
-   HERO CONTAINER
-   ============================================================ */
-.hero-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  overflow: hidden;
-  margin-top: 8rem;
-  padding: 2rem 2rem 60px;
-}
-
-.hero-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: 1;
-}
-
-.hero-container::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 2;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 3;
-  text-align: center;
-  max-width: 1000px;
-  color: #f9f6ef;
-}
-
-.hero-content p {
-  font-size: 3.5rem;
-  line-height: 1.4;
-  margin-bottom: 3rem;
-  font-weight: 300;
-}
-
-.hero-btn {
-  display: inline-block;
-  padding: 2rem 4rem;
-  background-color: #193497;
-  color: #f9f6ef;
-  text-decoration: none;
-  font-size: 3.5rem;
-  font-weight: 700;
-  border-radius: 14px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.hero-btn:hover {
-  background-color: #7899d4;
-  transform: scale(1.05);
-}
-
-
-/* ============================================================
-   FOOTER
-   ============================================================ */
-footer {
-  background-color: #193497;
-  color: #f9f6ef;
-  padding: 4rem 3rem 2rem;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  max-width: 1400px;
-  margin: 0 auto 3rem;
-  gap: 3rem;
-}
-
-.footer-links a {
-  color: #f9f6ef;
-  text-decoration: none;
-  font-size: 4rem;
-  font-weight: 400;
-  transition: font-size 0.3s ease;
-}
-
-.footer-links a:hover {
-  font-size: 4.5rem;
-}
-
-.footer-contact {
-  color: #f9f6ef;
-  font-size: 4rem;
-  font-weight: 400;
-  text-align: center;
-}
-
-.footer-contact h4 {
-  font-weight: 300;
-  text-align: center;
-}
-
-.footer-logo {
-  text-align: center;
-  margin: 3rem auto;
-}
-
-.footer-logo img {
-  height: 400px;
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(249, 246, 239, 0.2);
-  padding-top: 2rem;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.footer-bottom p {
-  font-size: 1rem;
-  font-weight: 300;
-  color: #f9f6ef;
-}
-
-
-/* ============================================================
-   PROJECT PAGE — HERO
-   ============================================================ */
-.project-hero {
-  display: flex;
-  gap: 4rem;
-  padding: 4rem 75px;
-  align-items: center;
-  min-height: calc(100vh - 380px);
-}
-
-.project-info {
-  flex: 1;
-  max-width: 50%;
-}
-
-.project-title {
-  font-size: 8rem;
-  font-weight: 700;
-  color: #193497;
-  margin-bottom: 2rem;
-  line-height: 1.1;
-}
-
-.project-description {
-  font-size: 3rem;
-  font-weight: 400;
-  color: #f9f6ef;
-  line-height: 1.6;
-}
-
-.project-image {
-  flex: 1;
-  max-width: 50%;
-}
-
-.project-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 14px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-}
-
-
-/* ============================================================
-   PROJECT PAGE — PROCESS / GALLERY
-   ============================================================ */
-.process-section {
   padding: 6rem 75px;
   background: #f9f6ef;
 }
 
-.section-title {
-  font-size: 8rem;
-  font-weight: 700;
-  color: #193497;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-/* Pinterest-style masonry grid */
-.gallery-grid {
-  column-count: 3;
-  column-gap: 2rem;
-  background: #f9f6ef;
-}
-
-.gallery-item {
-  position: relative;
-  break-inside: avoid;
-  margin-bottom: 2rem;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 14px;
-  display: inline-block;
-  width: 100%;
-}
-
-.gallery-bg {
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: transform 0.4s ease;
-}
-
-.gallery-item:hover .gallery-bg {
-  transform: scale(1.5);
-}
-
-.gallery-overlay {
-  position: absolute;
-  inset: 0;
-  transition: background 0.3s ease, opacity 0.3s ease;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.gallery-item:hover .gallery-overlay {
-  background: #282828;
-  opacity: 0.75;
-}
-
-.gallery-info {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  z-index: 2;
-  max-width: 80%;
-  pointer-events: none;
-}
-
-.gallery-item:hover .gallery-info {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.gallery-title {
-  font-size: 6rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: #f9f6ef;
-}
-
-.gallery-text {
-  font-size: 3rem;
-  font-weight: 300;
-  line-height: 1.4;
-  color: #f9f6ef;
-}
-
-
-/* ============================================================
-   LIGHTBOX
-   ============================================================ */
-.lightbox {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.95);
-  z-index: 2000;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.lightbox.active {
-  display: flex;
-  opacity: 1;
-  align-items: center;
-  justify-content: center;
-}
-
-.lightbox-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 90vw;
-  max-height: 90vh;
-}
-
-/* ~60% of viewport height — just under the 2/3 target */
-#lightbox-img {
-  max-width: 90vw;
-  max-height: 60vh;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  border-radius: 14px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-}
-
-.lightbox-caption {
-  text-align: center;
-  color: #f9f6ef;
-  margin-top: 2rem;
-  max-width: 800px;
-}
-
-#lightbox-title {
-  font-size: 6rem;
-  font-weight: 700;
-  color: #f9f6ef;
-}
-
-/* Close button */
-.lightbox-close {
-  position: absolute;
-  top: 2rem;
-  right: 3rem;
-  font-size: 4rem;
-  color: #f9f6ef;
-  cursor: pointer;
-  background: none;
-  border: none;
-  line-height: 1;
-  z-index: 2001;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.lightbox-close:hover {
-  transform: scale(1.2);
-  color: #7899d4;
-}
-
-/* Navigation arrows */
-.lightbox-prev,
-.lightbox-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 4rem;
-  color: #f9f6ef;
-  background: rgba(25, 52, 151, 0.7);
-  border: none;
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  border-radius: 8px;
-  z-index: 2001;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.lightbox-prev { left: 2rem; }
-.lightbox-next { right: 2rem; }
-
-.lightbox-prev:hover,
-.lightbox-next:hover {
-  background: #193497;
-  transform: translateY(-50%) scale(1.1);
-}
-
-
-/* ============================================================
-   ABOUT ME TEASER SECTION
-   ============================================================ */
-.about-teaser {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-  padding: 8rem 75px;
-  background: #f9f6ef;
-}
-
-/* Left column: text + button */
 .teaser-left {
   flex: 0 0 38%;
   max-width: 38%;
@@ -1849,9 +634,8 @@ footer {
   gap: 2.5rem;
 }
 
-/* vw-based font matching resume section scaling */
 .teaser-body {
-  font-size: 1.9vw;
+  font-size: clamp(1rem, 1.4vw, 1.5rem);
   font-weight: 400;
   color: #282828;
   line-height: 1.7;
@@ -1879,7 +663,7 @@ footer {
    RESUME
    ============================================================ */
 .resume-section {
-  padding: 8rem 5%;
+  padding: 6rem 5%;
   background: #f9f6ef;
 }
 
@@ -1889,15 +673,15 @@ footer {
 }
 
 .resume-block {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 .resume-heading {
-  font-size: 8rem;
+  font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 700;
   color: #193497;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
   border-bottom: 3px solid #193497;
 }
 
@@ -1924,7 +708,7 @@ footer {
 .company,
 .role,
 .dates {
-  font-size: 1.9vw;
+  font-size: clamp(0.95rem, 1.3vw, 1.3rem);
   font-weight: 400;
   color: #282828;
   line-height: 1.4;
@@ -1932,29 +716,29 @@ footer {
 }
 
 .location {
-  font-size: 1.5vw;
+  font-size: clamp(0.85rem, 1.1vw, 1.1rem);
   font-weight: 300;
   color: #666;
   margin: 0;
 }
 
 .description {
-  font-size: 1.9vw;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
   font-weight: 300;
   color: #666;
   line-height: 1.6;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .resume-bottom-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .contact-info {
-  font-size: 1.9vw;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
   font-weight: 300;
   color: #666;
   line-height: 1.8;
@@ -1967,36 +751,36 @@ footer {
    ============================================================ */
 @media (max-width: 1100px) {
   body {
-    padding-top: 140px;
+    padding-top: 80px;
   }
 
   .logo img {
-    height: 100px;
+    height: 55px;
   }
 
   nav {
-    padding: 1.5rem 2rem;
+    padding: 0.75rem 2rem;
   }
 
   nav a {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .menu-container {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .intro {
-    min-height: calc(100vh - 140px);
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    min-height: calc(100vh - 80px);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .about-intro {
     flex-direction: column;
-    min-height: calc(100vh - 140px);
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    min-height: calc(100vh - 80px);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .about-intro .intro-content,
@@ -2009,11 +793,7 @@ footer {
   }
 
   .projects {
-    margin-top: 5rem;
-  }
-
-  .projects-title {
-    font-size: 6rem;
+    margin-top: 4rem;
   }
 
   .image-grid {
@@ -2025,88 +805,28 @@ footer {
     height: 50vh;
   }
 
-  .number {
-    font-size: 8rem;
-    bottom: 10px;
-    right: 10px;
-  }
-
   .hero-container {
     height: 100vh;
-    margin-top: 5rem;
+    margin-top: 4rem;
     padding: 2rem 2rem 50px;
-  }
-
-  .hero-content p {
-    font-size: 2.5rem;
-  }
-
-  .hero-btn {
-    font-size: 2.5rem;
-    padding: 1.5rem 4rem;
-  }
-
-  footer {
-    padding: 3rem 2rem 1.5rem;
-  }
-
-  .footer-links {
-    gap: 1.5rem;
-  }
-
-  .footer-links a {
-    font-size: 1.3rem;
-  }
-
-  .footer-links a:hover {
-    font-size: 1.5rem;
-  }
-
-  .footer-contact {
-    font-size: 1.3rem;
-  }
-
-  .footer-logo img {
-    height: 250px;
   }
 
   .project-hero {
     padding: 3rem 40px;
-    min-height: calc(100vh - 140px);
-  }
-
-  .project-title {
-    font-size: 5rem;
-  }
-
-  .project-description {
-    font-size: 2rem;
+    min-height: calc(100vh - 80px);
   }
 
   .process-section {
     padding: 4rem 40px;
   }
 
-  .section-title {
-    font-size: 5rem;
-  }
-
   .gallery-grid {
     column-count: 2;
   }
 
-  .gallery-title {
-    font-size: 2.5rem;
-  }
-
-  .gallery-text {
-    font-size: 1.3rem;
-  }
-
-  /* Teaser */
   .about-teaser {
     gap: 3rem;
-    padding: 6rem 40px;
+    padding: 5rem 40px;
   }
 
   .teaser-left {
@@ -2114,41 +834,8 @@ footer {
     max-width: 40%;
   }
 
-  .teaser-body {
-    font-size: 1.7vw;
-  }
-
-  .teaser-right {
-    grid-template-rows: 24vw 24vw;
-    gap: 1.2rem;
-  }
-
-  /* Resume */
   .resume-section {
-    padding: 5rem 8%;
-  }
-
-  .resume-heading {
-    font-size: 5.5rem;
-  }
-
-  .resume-item {
-    gap: 2rem;
-  }
-
-  .company,
-  .role,
-  .dates {
-    font-size: 1.7vw;
-  }
-
-  .location {
-    font-size: 1.3vw;
-  }
-
-  .description,
-  .contact-info {
-    font-size: 1.7vw;
+    padding: 4rem 5%;
   }
 }
 
@@ -2158,47 +845,42 @@ footer {
    ============================================================ */
 @media (max-width: 768px) {
   body {
-    padding-top: 110px;
+    padding-top: 70px;
   }
 
   .logo img {
-    height: 80px;
+    height: 45px;
   }
 
   nav {
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.5rem;
   }
 
   nav a {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+    padding: 8px 12px;
   }
 
   .menu-container {
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .intro {
-    min-height: calc(100vh - 110px);
-    padding: 3rem 40px;
+    min-height: calc(100vh - 70px);
+    padding: 3rem 30px;
   }
 
   .about-intro {
-    min-height: calc(100vh - 110px);
-    padding: 3rem 40px;
+    min-height: calc(100vh - 70px);
+    padding: 3rem 30px;
   }
 
   .intro-text {
-    font-size: 1.2rem;
     max-width: 90%;
   }
 
   .projects {
     margin-top: 3rem;
-  }
-
-  .projects-title {
-    font-size: 3rem;
-    margin-bottom: 2rem;
   }
 
   .image-grid {
@@ -2208,20 +890,6 @@ footer {
 
   .panel {
     height: 50vh;
-  }
-
-  .panel-title {
-    font-size: 8rem;
-  }
-
-  .panel-description {
-    font-size: 4rem;
-  }
-
-  .number {
-    font-size: 6rem;
-    bottom: 3px;
-    right: 5px;
   }
 
   .hero-container {
@@ -2234,41 +902,14 @@ footer {
     max-width: 95%;
   }
 
-  .hero-content p {
-    font-size: 8rem;
-    margin-bottom: 1rem;
-  }
-
-  .hero-btn {
-    font-size: 4rem;
-    padding: 1.5rem 5rem;
-  }
-
-  footer {
-    padding: 1rem 2rem;
-  }
-
   .footer-links {
-    gap: 2.5rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .footer-links a {
-    font-size: 1.5rem;
-  }
-
-  .footer-links a:hover {
-    font-size: 3.5rem;
-  }
-
-  .footer-contact {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
   .footer-logo img {
-    height: 125px;
+    height: 70px;
   }
 
   .footer-bottom {
@@ -2277,7 +918,7 @@ footer {
 
   .project-hero {
     flex-direction: column;
-    padding: 2rem 40px;
+    padding: 2rem 30px;
     gap: 2rem;
   }
 
@@ -2286,36 +927,14 @@ footer {
     max-width: 100%;
   }
 
-  .project-title {
-    font-size: 10rem;
-  }
-
-  .project-description {
-    font-size: 2rem;
-  }
-
   .process-section {
-    padding: 3rem 40px;
-  }
-
-  .section-title {
-    font-size: 4rem;
-    margin-bottom: 2rem;
+    padding: 3rem 30px;
   }
 
   .gallery-grid {
     column-count: 1;
   }
 
-  .gallery-title {
-    font-size: 2rem;
-  }
-
-  .gallery-text {
-    font-size: 1.1rem;
-  }
-
-  /* Lightbox */
   #lightbox-img {
     max-height: 55vh;
   }
@@ -2325,30 +944,25 @@ footer {
     padding: 0 1rem;
   }
 
-  #lightbox-title {
-    font-size: 4rem;
-  }
-
   .lightbox-close {
     top: 1rem;
     right: 1.5rem;
-    font-size: 3rem;
+    font-size: 1.75rem;
   }
 
   .lightbox-prev,
   .lightbox-next {
-    font-size: 2.5rem;
-    padding: 0.75rem 1rem;
+    font-size: 1.5rem;
+    padding: 0.6rem 0.9rem;
   }
 
-  .lightbox-prev { left: 1rem; }
-  .lightbox-next { right: 1rem; }
+  .lightbox-prev { left: 0.75rem; }
+  .lightbox-next { right: 0.75rem; }
 
-  /* Teaser */
   .about-teaser {
     flex-direction: column;
-    padding: 4rem 40px;
-    gap: 3rem;
+    padding: 4rem 30px;
+    gap: 2.5rem;
   }
 
   .teaser-left {
@@ -2357,32 +971,16 @@ footer {
     gap: 2rem;
   }
 
-  .teaser-body {
-    font-size: 2.2rem;
-  }
-
   .teaser-right {
     width: 100%;
-    grid-template-rows: 45vw 45vw;
-    gap: 1rem;
   }
 
-  .teaser-img--b {
-    margin-top: -2rem;
-  }
-
-  /* Resume */
   .resume-section {
-    padding: 3rem 40px;
+    padding: 3rem 30px;
   }
 
   .resume-block {
-    margin-bottom: 4rem;
-  }
-
-  .resume-heading {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .resume-item {
@@ -2395,25 +993,9 @@ footer {
     text-align: left;
   }
 
-  .company,
-  .role,
-  .dates {
-    font-size: 2.2rem;
-  }
-
-  .location {
-    font-size: 1.8rem;
-  }
-
-  .description,
-  .contact-info {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-  }
-
   .resume-bottom-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
   .footer-contact h4 {
