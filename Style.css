@@ -411,7 +411,7 @@ footer {
 .project-description {
   font-size: clamp(1rem, 1.5vw, 1.6rem);
   font-weight: 400;
-  color: #f9f6ef;
+  color: #282828;
   line-height: 1.6;
 }
 
