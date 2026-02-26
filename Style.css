@@ -33,8 +33,30 @@ nav {
   padding: 0.75rem 3rem;
 }
 
+.logo {
+  position: relative;
+  display: inline-block;
+}
+
 .logo img {
   height: 100px;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.logo .logo-black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.logo:hover .logo-default {
+  opacity: 0;
+}
+
+.logo:hover .logo-black {
+  opacity: 1;
 }
 
 .menu-container {
