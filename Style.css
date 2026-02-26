@@ -242,7 +242,7 @@ nav a:hover {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  font-size: clamp(8rem, 18vw, 22rem);
+  font-size: 3rem;
   font-weight: 700;
   color: #f9f6ef;
   opacity: 0.8;
