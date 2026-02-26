@@ -55,6 +55,7 @@ nav a {
 nav a:hover {
   background-color: #BFC0F6;
   transform: scale(1.05);
+  color: #282828; 
 }
 
 
@@ -336,7 +337,9 @@ nav a:hover {
 .hero-btn:hover {
   background-color: #BFC0F6;
   transform: scale(1.05);
+  color: #282828; 
 }
+
 
 
 /* ============================================================
