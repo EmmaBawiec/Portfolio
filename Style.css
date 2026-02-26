@@ -78,8 +78,6 @@ nav a:hover {
   font-size: clamp(2rem, 3vw, 4rem);
   font-weight: 700;
   color: #1F5C47;
-  /* FIX: reserve enough height for the longest possible typed string
-     so the content below never gets pushed down while typing */
   min-height: 3lh;
 }
 
@@ -257,17 +255,19 @@ nav a:hover {
   line-height: 1.4;
 }
 
-/* Large decorative number — doubled in size */
+/* Large decorative number — anchored to bottom-right corner */
 .number {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: -0.15em;
+  right: -0.05em;
   font-size: 22rem;
   font-weight: 700;
   color: #f9f6ef;
   opacity: 0.8;
   z-index: 2;
   line-height: 1;
+  pointer-events: none;
+  user-select: none;
 }
 
 
