@@ -35,9 +35,7 @@ nav {
 
 .logo {
   position: relative;
-  display: inline-block;
   height: 100px;
-  width: auto;
 }
 
 .logo img {
