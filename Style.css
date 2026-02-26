@@ -33,22 +33,34 @@ nav {
   padding: 0.75rem 3rem;
 }
 
-/* inside @media (max-width: 1100px) */
 .logo {
-  height: 55px;
-}
-.logo img,
-.logo .logo-black {
-  height: 55px;
+  position: relative;
+  height: 100px;
+  flex-shrink: 0;
 }
 
-/* inside @media (max-width: 768px) */
-.logo {
-  height: 45px;
+.logo img {
+  height: 100px;
+  width: auto;
+  display: block;
+  transition: opacity 0.3s ease;
 }
-.logo img,
+
 .logo .logo-black {
-  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: auto;
+  opacity: 0;
+}
+
+.logo:hover .logo-default {
+  opacity: 0;
+}
+
+.logo:hover .logo-black {
+  opacity: 1;
 }
 
 .menu-container {
@@ -63,13 +75,13 @@ nav a {
   font-size: 2rem;
   padding: 10px 18px;
   border-radius: 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
   background-color: #BFC0F6;
   transform: scale(1.05);
-  color: #282828; 
+  color: #282828;
 }
 
 
@@ -180,7 +192,6 @@ nav a:hover {
   height: 85vh;
   width: 100%;
 }
-
 
 /* Gallery CTA below project grid */
 .projects-cta {
@@ -345,15 +356,14 @@ nav a:hover {
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   font-weight: 700;
   border-radius: 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
 .hero-btn:hover {
   background-color: #BFC0F6;
   transform: scale(1.05);
-  color: #282828; 
+  color: #282828;
 }
-
 
 
 /* ============================================================
@@ -791,7 +801,12 @@ footer {
     padding-top: 80px;
   }
 
-  .logo img {
+  .logo {
+    height: 55px;
+  }
+
+  .logo img,
+  .logo .logo-black {
     height: 55px;
   }
 
@@ -885,7 +900,12 @@ footer {
     padding-top: 70px;
   }
 
-  .logo img {
+  .logo {
+    height: 45px;
+  }
+
+  .logo img,
+  .logo .logo-black {
     height: 45px;
   }
 
