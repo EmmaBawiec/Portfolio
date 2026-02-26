@@ -33,30 +33,22 @@ nav {
   padding: 0.75rem 3rem;
 }
 
+/* inside @media (max-width: 1100px) */
 .logo {
-  position: relative;
-  height: 150px;
+  height: 55px;
 }
-
-.logo img {
-  height: 150px;
-  display: block;
-  transition: opacity 0.3s ease;
-}
-
+.logo img,
 .logo .logo-black {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
+  height: 55px;
 }
 
-.logo:hover .logo-default {
-  opacity: 0;
+/* inside @media (max-width: 768px) */
+.logo {
+  height: 45px;
 }
-
-.logo:hover .logo-black {
-  opacity: 1;
+.logo img,
+.logo .logo-black {
+  height: 45px;
 }
 
 .menu-container {
