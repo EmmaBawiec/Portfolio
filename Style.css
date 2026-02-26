@@ -35,11 +35,11 @@ nav {
 
 .logo {
   position: relative;
-  height: 100px;
+  height: 150px;
 }
 
 .logo img {
-  height: 100px;
+  height: 150px;
   display: block;
   transition: opacity 0.3s ease;
 }
