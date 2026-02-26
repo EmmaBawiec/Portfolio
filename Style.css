@@ -71,7 +71,6 @@ a.logo {
 }
 
 a.logo:hover {
-  background: none;
   transform: none;
   color: inherit;
 }
