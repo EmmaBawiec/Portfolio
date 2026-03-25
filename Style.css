@@ -1025,6 +1025,7 @@ footer {
   .lightbox-next {
     font-size: 1.5rem;
     padding: 0.6rem 0.9rem;
+   color: #1F5C47;
   }
 
   .lightbox-prev { left: 0.75rem; }
