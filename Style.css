@@ -1028,8 +1028,12 @@ footer {
    color: #1F5C47;
   }
 
-  .lightbox-prev { left: 0.75rem; }
-  .lightbox-next { right: 0.75rem; }
+  .lightbox-prev { left: 0.75rem;
+                    color: #1F5C47;
+}
+  .lightbox-next { right: 0.75rem; 
+                    color: #1F5C47;
+}
 
   .about-teaser {
     flex-direction: column;
