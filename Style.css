@@ -657,7 +657,7 @@ footer {
   transform: translateY(-50%);
   font-size: 2rem;
   color: #f9f6ef;
-  background: rgba(25, 52, 151, 0.7);
+  background: #7B7DD4;
   border: none;
   padding: 0.75rem 1.25rem;
   cursor: pointer;
@@ -1025,11 +1025,11 @@ footer {
   .lightbox-next {
     font-size: 1.5rem;
     padding: 0.6rem 0.9rem;
-   color: #1F5C47;
+    color: #f9f6ef;
   }
 
-  .lightbox-prev { left: 0.75rem;}
-  .lightbox-next { right: 0.75rem;}
+  .lightbox-prev { left: 0.75rem; }
+  .lightbox-next { right: 0.75rem; }
 
   .about-teaser {
     flex-direction: column;
