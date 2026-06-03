@@ -86,7 +86,7 @@ a.logo:hover {
 nav a {
   text-decoration: none;
   color: #f9f6ef;
-  font-size: 2rem;
+  font-size: 2.25rem; /* was 2rem */
   padding: 10px 18px;
   border-radius: 10px;
   transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
@@ -138,7 +138,7 @@ nav a:hover {
 }
 
 .intro-text {
-  font-size: clamp(1rem, 1.6vw, 1.6rem);
+  font-size: clamp(1.25rem, 1.85vw, 1.85rem); /* was clamp(1rem, 1.6vw, 1.6rem) */
   max-width: 60%;
   margin-top: 0.75rem;
   font-weight: 400;
@@ -165,7 +165,7 @@ nav a:hover {
 }
 
 .about-intro .intro-text {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.25rem, 1.75vw, 1.75rem); /* was clamp(1rem, 1.5vw, 1.5rem) */
   max-width: 100%;
   margin-top: 0.75rem;
   font-weight: 400;
@@ -193,7 +193,7 @@ nav a:hover {
 }
 
 .projects-title {
-  font-size: clamp(3rem, 7vw, 7rem);
+  font-size: clamp(3.25rem, 7.25vw, 7.25rem); /* was clamp(3rem, 7vw, 7rem) */
   font-weight: 700;
   color: #1F5C47;
   text-align: center;
@@ -217,7 +217,7 @@ nav a:hover {
 }
 
 .projects-cta-text {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.25rem, 1.75vw, 1.75rem); /* was clamp(1rem, 1.5vw, 1.5rem) */
   font-weight: 400;
   color: #282828;
   text-align: center;
@@ -284,13 +284,13 @@ nav a:hover {
 }
 
 .panel-title {
-  font-size: clamp(1.1rem, 2vw, 2.2rem);
+  font-size: clamp(1.35rem, 2.25vw, 2.45rem); /* was clamp(1.1rem, 2vw, 2.2rem) */
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .panel-description {
-  font-size: clamp(0.85rem, 1.2vw, 1.3rem);
+  font-size: clamp(1.1rem, 1.45vw, 1.55rem); /* was clamp(0.85rem, 1.2vw, 1.3rem) */
   font-weight: 300;
   line-height: 1.4;
 }
@@ -355,7 +355,7 @@ nav a:hover {
 }
 
 .hero-content p {
-  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-size: clamp(1.45rem, 2.25vw, 2.25rem); /* was clamp(1.2rem, 2vw, 2rem) */
   line-height: 1.4;
   margin-bottom: 2rem;
   font-weight: 300;
@@ -367,7 +367,7 @@ nav a:hover {
   background-color: #1F5C47;
   color: #f9f6ef;
   text-decoration: none;
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.25rem, 1.75vw, 1.75rem); /* was clamp(1rem, 1.5vw, 1.5rem) */
   font-weight: 700;
   border-radius: 10px;
   transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
@@ -401,18 +401,18 @@ footer {
 .footer-links a {
   color: #f9f6ef;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.35rem; /* was 1.1rem */
   font-weight: 400;
   transition: font-size 0.3s ease;
 }
 
 .footer-links a:hover {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* was 1.25rem */
 }
 
 .footer-contact {
   color: #f9f6ef;
-  font-size: 1rem;
+  font-size: 1.25rem; /* was 1rem */
   font-weight: 400;
   text-align: center;
 }
@@ -439,7 +439,7 @@ footer {
 }
 
 .footer-bottom p {
-  font-size: 0.85rem;
+  font-size: 1.1rem; /* was 0.85rem */
   font-weight: 300;
   color: #f9f6ef;
 }
@@ -462,7 +462,7 @@ footer {
 }
 
 .project-title {
-  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-size: clamp(2.75rem, 5.25vw, 5.25rem); /* was clamp(2.5rem, 5vw, 5rem) */
   font-weight: 700;
   color: #1F5C47;
   margin-bottom: 2rem;
@@ -470,7 +470,7 @@ footer {
 }
 
 .project-description {
-  font-size: clamp(1rem, 1.5vw, 1.6rem);
+  font-size: clamp(1.25rem, 1.75vw, 1.85rem); /* was clamp(1rem, 1.5vw, 1.6rem) */
   font-weight: 400;
   color: #282828;
   line-height: 1.6;
@@ -498,7 +498,7 @@ footer {
 }
 
 .section-title {
-  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-size: clamp(2.75rem, 5.25vw, 5.25rem); /* was clamp(2.5rem, 5vw, 5rem) */
   font-weight: 700;
   color: #1F5C47;
   text-align: center;
@@ -565,14 +565,14 @@ footer {
 }
 
 .gallery-title {
-  font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+  font-size: clamp(1.45rem, 2.75vw, 2.75rem); /* was clamp(1.2rem, 2.5vw, 2.5rem) */
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #f9f6ef;
 }
 
 .gallery-text {
-  font-size: clamp(0.85rem, 1.2vw, 1.3rem);
+  font-size: clamp(1.1rem, 1.45vw, 1.55rem); /* was clamp(0.85rem, 1.2vw, 1.3rem) */
   font-weight: 300;
   line-height: 1.4;
   color: #f9f6ef;
@@ -626,7 +626,7 @@ footer {
 }
 
 #lightbox-title {
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1.75rem, 3.25vw, 3.25rem); /* was clamp(1.5rem, 3vw, 3rem) */
   font-weight: 700;
   color: #f9f6ef;
 }
@@ -635,7 +635,7 @@ footer {
   position: absolute;
   top: 2rem;
   right: 3rem;
-  font-size: 2rem;
+  font-size: 2.25rem; /* was 2rem */
   color: #f9f6ef;
   cursor: pointer;
   background: none;
@@ -655,7 +655,7 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2rem;
+  font-size: 2.25rem; /* was 2rem */
   color: #f9f6ef;
   background: rgba(25, 52, 151, 0.7);
   border: none;
@@ -696,7 +696,7 @@ footer {
 }
 
 .teaser-body {
-  font-size: clamp(1rem, 1.4vw, 1.5rem);
+  font-size: clamp(1.25rem, 1.65vw, 1.75rem); /* was clamp(1rem, 1.4vw, 1.5rem) */
   font-weight: 400;
   color: #282828;
   line-height: 1.7;
@@ -738,7 +738,7 @@ footer {
 }
 
 .resume-heading {
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(2.25rem, 4.25vw, 4.25rem); /* was clamp(2rem, 4vw, 4rem) */
   font-weight: 700;
   color: #1F5C47;
   margin-bottom: 1.5rem;
@@ -769,7 +769,7 @@ footer {
 .company,
 .role,
 .dates {
-  font-size: clamp(0.95rem, 1.3vw, 1.3rem);
+  font-size: clamp(1.2rem, 1.55vw, 1.55rem); /* was clamp(0.95rem, 1.3vw, 1.3rem) */
   font-weight: 400;
   color: #282828;
   line-height: 1.4;
@@ -777,14 +777,14 @@ footer {
 }
 
 .location {
-  font-size: clamp(0.85rem, 1.1vw, 1.1rem);
+  font-size: clamp(1.1rem, 1.35vw, 1.35rem); /* was clamp(0.85rem, 1.1vw, 1.1rem) */
   font-weight: 300;
   color: #282828;
   margin: 0;
 }
 
 .description {
-  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+  font-size: clamp(1.15rem, 1.45vw, 1.45rem); /* was clamp(0.9rem, 1.2vw, 1.2rem) */
   font-weight: 300;
   color: #282828;
   line-height: 1.6;
@@ -799,7 +799,7 @@ footer {
 }
 
 .contact-info {
-  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+  font-size: clamp(1.15rem, 1.45vw, 1.45rem); /* was clamp(0.9rem, 1.2vw, 1.2rem) */
   font-weight: 300;
   color: #282828;
   line-height: 1.8;
@@ -829,7 +829,7 @@ footer {
   }
 
   nav a {
-    font-size: 1rem;
+    font-size: 1.25rem; /* was 1rem */
   }
 
   .menu-container {
@@ -928,7 +928,7 @@ footer {
   }
 
   nav a {
-    font-size: 0.95rem;
+    font-size: 1.2rem; /* was 0.95rem */
     padding: 8px 12px;
   }
 
@@ -1018,12 +1018,12 @@ footer {
   .lightbox-close {
     top: 1rem;
     right: 1.5rem;
-    font-size: 1.75rem;
+    font-size: 2rem; /* was 1.75rem */
   }
 
   .lightbox-prev,
   .lightbox-next {
-    font-size: 1.5rem;
+    font-size: 1.75rem; /* was 1.5rem */
     padding: 0.6rem 0.9rem;
   }
 
